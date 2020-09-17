@@ -1,0 +1,1 @@
+gcc -Wall $CFILE -E -o c - For Task 0 - Preprocessors
