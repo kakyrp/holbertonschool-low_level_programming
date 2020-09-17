@@ -1,2 +1,2 @@
 #!/bin/bash
-cat $CFILE > c
+gcc -Wall $CFILE -E -o c
