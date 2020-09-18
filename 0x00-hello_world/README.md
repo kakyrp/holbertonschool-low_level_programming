@@ -1,1 +1,1 @@
-gcc -Wall $CFILE -E -o c - For Task 0 - Preprocessors
+This is a project to learn C programming.
