@@ -14,17 +14,20 @@
 int main(void)
 {
 int n;
-int k;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-k = n % 10;
-if (k > 5)
-printf("Last digit of %i is %i and is greater than 0: is positive\n", n, k);
-else if (k == 0)
-printf("Last digit of %i is %i and is zero\n", n, k);
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n > 0)
+{
+printf("%d is positive\n", n);
+}
+else if (n == 0)
+{
+printf("%d is zero\n", n);
+}
 else
-printf("Last digit of %i is %i and is less than 0: is negative\n", n, k);
-
+{
+printf("%d is negative\n", n);
+}
 return (0);
 }
