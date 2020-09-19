@@ -18,11 +18,12 @@ for (b = 48; b <= 57; b++)
 {
 putchar(a);
 putchar(b);
-if (b <= 57)
+if (a == 57 && b == 57)
 {
+break;
+}
 putchar(44);
 putchar(32);
-}
 }
 }
 putchar(10);
