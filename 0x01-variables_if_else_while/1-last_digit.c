@@ -3,10 +3,10 @@
 #include <stdio.h>
 /**
  * main - This program will assign a random number
- * if the number is positive, negative or zero.
+ * if the number is great or less and 0
  *
  * Description: prints numbers
- * and the prints if it is positive,negative or zero
+ * and the prints if it is greater,less or zero
  * Return: 0
  *
  */
