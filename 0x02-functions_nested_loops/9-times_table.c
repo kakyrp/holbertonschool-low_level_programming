@@ -10,8 +10,15 @@ for (i = 0; i < 10; i++)
 for (m = 0; m < 10; m++)
 {
 j = m * i;
+if (j < 10)
+{
+_putchar(j + '0');
+}
+else
+{
 _putchar (j / 10 + '0');
 _putchar (j % 10 + '0');
+}
 if (m < 9)
 {
 _putchar (',');
