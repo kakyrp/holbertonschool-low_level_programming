@@ -22,6 +22,10 @@ _putchar (j % 10 + '0');
 if (m < 9)
 {
 _putchar (',');
+if (j < 10) 
+{
+_putchar (32);
+}
 _putchar (32);
 }
 if (m == 9)
