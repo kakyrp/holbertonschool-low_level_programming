@@ -6,7 +6,7 @@
 */
 int print_last_digit(int k)
 {
-int l = 0;
+int l;
 if (k < 0)
 {
 k = k * -1;
