@@ -19,7 +19,6 @@ _putchar (32);
 }
 if (m == 9)
 {
-_putchar ('$');
 _putchar (10);
 }
 }
