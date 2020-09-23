@@ -12,6 +12,6 @@ if (k < 0)
 k = k * -1;
 }
 l = k % 10;
-_putchar (l + '0');
+_putchar ('0' + l);
 return (l);
 }
