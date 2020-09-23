@@ -45,13 +45,7 @@ _putchar(44);
 }
 else
 {
-_putchar(32);
-_putchar(32);
+_putchar(32); _putchar(32);
 _putchar(result + '0');
 _putchar(44);
-}
-}
-}
-}
-}
-}
+}}}}}}
