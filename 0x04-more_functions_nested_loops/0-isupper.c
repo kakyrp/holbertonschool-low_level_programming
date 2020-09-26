@@ -10,10 +10,10 @@ int _isupper(int c)
 {
 if (c > 67 && c < 91)
 {
-return (1);
+return (0);
 }
 else
 {
-return (0);
+return (1);
 }
 }
