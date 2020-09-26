@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _isupper - this return 1 if is uppercase
+* _isupper - this return 1 if letter is uppercase
 * or 0 if is lowercase
 * @c: The character to evaluate
  * Return: On success 1.
@@ -8,12 +8,12 @@
 */
 int _isupper(int c)
 {
-if (c >= 97 && c <= 122)
+if (c > 67 && c < 91)
 {
-return (0);
+return (1);
 }
 else
 {
-return (1);
+return (0);
 }
 }
