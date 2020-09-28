@@ -8,7 +8,7 @@ void print_diagonal(int n)
 int k;
 if (n > 0)
 {
-for (k = 0; k <= n; k++)
+for (k = 0; k < n; k++)
 {
 _putchar (92);
 }
