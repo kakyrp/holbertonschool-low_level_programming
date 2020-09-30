@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
- * print_rev - the lenght of the string.
- * @s: The char array to count.
- * Return: The length of the string.
+ * print_rev - the string.
+ * @s: The char array to print.
  */
 void print_rev(char *s)
 {
@@ -11,6 +10,7 @@ while (s[i] != '\0')
 {
 i++;
 }
+i--;
 while (i >= 0)
 {
 _putchar (s[i]);
