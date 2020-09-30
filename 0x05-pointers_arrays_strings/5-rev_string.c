@@ -9,7 +9,7 @@ int i = 0;
 int j = 0;
 char str[500];
 
-while (s[i] != '\0')
+while ((str[i] = s[i]))
 {
 i++;
 }
