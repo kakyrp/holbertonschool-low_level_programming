@@ -19,5 +19,5 @@ for (i = 0; i <= a; i += 2)
 {
 _putchar(str[i]);
 }
-putchar(10);
+_putchar(10);
 }
