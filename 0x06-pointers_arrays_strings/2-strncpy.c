@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strn - function similar to the _strcat
+ * _strncpy - function similar to the _strcat
  * @src: The first string.
  * @dest: The second string.
  * @n: The bytes to copy.
