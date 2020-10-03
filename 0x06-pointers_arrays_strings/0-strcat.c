@@ -14,7 +14,7 @@ while (dest[l] != '\0')
 {
 l++;
 }
-*(dest + l + 1) = ' ';
+/* *(dest + l + 1) = ' ';*/
 i = 0;
 
 while (src[i] != '\0')
