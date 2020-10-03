@@ -13,7 +13,6 @@ int l = 0, i = 0;
 while (dest[l] != '\0')
 {
 l++;
-i++;
 }
 *(dest + l + 1) = ' ';
 i = 0;
