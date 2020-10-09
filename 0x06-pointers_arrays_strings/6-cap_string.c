@@ -16,12 +16,12 @@ char *cap_string(char *s)
 			for (n = 97; n <= 122; n++)
 			{
 				if (s[i + 1] == n)
-					s[i + 1] = n - 32;
+				s[i + 1] = n - 32;
 			}
 		}
 		if (i == 0)
 		{
-			for (n = 97; n == 122; n++)
+			for (n = 97; n <= 122; n++)
 			{
 				if (s[i] == n)
 					s[i] = n - 32;
