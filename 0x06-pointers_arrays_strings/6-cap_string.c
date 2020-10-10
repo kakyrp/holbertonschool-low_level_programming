@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * cap_string - function that capitalizes all words of a string.
  * @s: The char array.
@@ -9,9 +8,9 @@ char *cap_string(char *s)
 {
 	int i, n;
 
-	for (i = 0; *(s + i); i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*(s + i) == 32)
+		if (s[i] == 32)
 		{
 			for (n = 97; n <= 122; n++)
 			{
