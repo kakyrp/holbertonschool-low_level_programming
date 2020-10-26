@@ -1,7 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+/**
+ * print_return - auxiliar function
+ * @error_number: number of error.
+ * @coins: the number of coins received.
+ * Return: the number of errors.
+ */
 
+int print_return(int error_number, int coins)
+{
+	if (error_number == 0)
+	{
+		printf("%i\n", coins);
+	}
+	else
+	{
+		printf("%s\n", "Error");
+	}
+	return (error_number);
+}
 /**
  * number - this function will check if the number
  * is positive or not, using isdigit.
@@ -15,7 +33,7 @@ int number(char *s)
 
 	i = 0, a = 0, b = 1;
 	if (*s == '-')
-	{		
+	{
 		return (0);
 	}
 	for (i = 0; *(s + i) != 0; i++)
@@ -66,7 +84,6 @@ int main(int argc, char **argv)
 					}
 				}
 			}
-			
 		}
 		else
 		{
@@ -74,13 +91,5 @@ int main(int argc, char **argv)
 			return (0);
 		}
 	}
-	if (error_number == 0)
-	{
-		printf("%i\n", coins);
-	}
-	else
-	{
-		printf("%s\n", "Error");
-	}
-	return (error_number);
+	return (print_return(error_number, coins));
 }
