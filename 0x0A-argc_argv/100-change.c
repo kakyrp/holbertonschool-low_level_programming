@@ -41,6 +41,10 @@ int main(int argc, char **argv)
 	int c[5] = {25, 10, 5, 2, 1};
 
 	k = 0, l = 1, coins = 0;
+	if (argc == 0)
+	{
+		l++;
+	}
 	if (argc == 2)
 	{
 		if (number(argv[1]))
@@ -70,7 +74,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		printf("%d\n", 0);
+		printf("%s\n", "Error");
 	}
 	return (l);
 }
