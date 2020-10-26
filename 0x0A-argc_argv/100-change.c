@@ -15,8 +15,8 @@ int number(char *s)
 
 	i = 0, a = 0, b = 1;
 	if (*s == '-')
-	{
-		i++;
+	{		
+		return (0);
 	}
 	for (i = 0; *(s + i) != 0; i++)
 	{
@@ -37,38 +37,44 @@ int number(char *s)
  */
 int main(int argc, char **argv)
 {
-	int k, l, coins, cents, m;
+	int index, error_number, coins, cents, result;
 	int c[5] = {25, 10, 5, 2, 1};
 
-	k = 0, l = 1, coins = 0;
-	if (argc == 0)
+	index = 0, error_number = 1, coins = 0;
+	if (argc != 2)
 	{
-		l++;
+		error_number++;
 	}
-	if (argc == 2)
+	else
 	{
 		if (number(argv[1]))
 		{
-			l = 0, cents = atoi(argv[1]);
+			error_number = 0, cents = atoi(argv[1]);
 			if (cents >= 0)
 			{
 				while (cents != 0)
 				{
-					m = cents / c[k];
-					if (m == 0)
+					result = cents / c[index];
+					if (result == 0)
 					{
-						k++;
+						index++;
 					}
 					else
 					{
-						coins += m;
-						cents -= (m * c[k]);
+						coins += result;
+						cents -= (result * c[index]);
 					}
 				}
 			}
+			
+		}
+		else
+		{
+			printf("%d\n", 0);
+			return (0);
 		}
 	}
-	if (l == 0)
+	if (error_number == 0)
 	{
 		printf("%i\n", coins);
 	}
@@ -76,5 +82,5 @@ int main(int argc, char **argv)
 	{
 		printf("%s\n", "Error");
 	}
-	return (l);
+	return (error_number);
 }
