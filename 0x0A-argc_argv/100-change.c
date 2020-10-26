@@ -70,7 +70,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		printf("%s\n", "Error");
+		printf("%d\n", 0);
 	}
 	return (l);
 }
