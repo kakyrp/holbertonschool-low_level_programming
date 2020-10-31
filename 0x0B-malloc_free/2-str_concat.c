@@ -14,10 +14,6 @@ char *str_concat(char *s1, char *s2)
 	char *con_str;
 	int index = 0;
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		return (NULL);
-	}
 	if (s1 != NULL)
 	{
 		i += count_str(s1);
@@ -26,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		i += count_str(s2);
 	}
-	con_str = malloc(sizeof(char) * (i));
+	con_str = malloc(sizeof(char) * (i + 1));
 	if (con_str == NULL)
 	{
 		return (NULL);
@@ -51,6 +47,7 @@ char *str_concat(char *s1, char *s2)
 			index++;
 		}
 	}
+	con_str[index] = '\0';
 	return (con_str);
 }
 /**
