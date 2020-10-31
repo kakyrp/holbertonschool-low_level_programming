@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+int count_str(char *str_to_count);
 /**
  * str_concat - function that concatenates two strings.
  * @s1: the first string to concatenate.
@@ -17,29 +18,20 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-
-	while (s1[i] != '\0')
+	if (s1 != NULL)
 	{
-		i++;
-		index++;
+		i += count_str(s1);
 	}
-
-	while (s2[i] != '\0')
+	if (s2 != NULL)
 	{
-		i++;
-		index++;
+		i += count_str(s2);
 	}
-
 	con_str = malloc(sizeof(char) * (i));
-
 	if (con_str == NULL)
 	{
 		return (NULL);
 	}
-
 	i = 0;
-	index = 0;
-
 	if (s1 != NULL)
 	{
 		while (s1[i] != '\0')
@@ -49,9 +41,7 @@ char *str_concat(char *s1, char *s2)
 			index++;
 		}
 	}
-
 	i = 0;
-
 	if (s2 != NULL)
 	{
 		while (s2[i] != '\0')
@@ -61,7 +51,20 @@ char *str_concat(char *s1, char *s2)
 			index++;
 		}
 	}
-
-	con_str[index] = '\0';
 	return (con_str);
+}
+/**
+ * count_str - function that counts the array length
+ * @str_to_count: the char array pointer to count.
+ * Return: the array length.
+ */
+int count_str(char *str_to_count)
+{
+	int i = 0;
+
+	while (str_to_count[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
