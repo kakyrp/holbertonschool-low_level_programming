@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	char *con_str;
 	int index = 0;
 
-	if (s1 == NULL && s2 == NULL)
+	if (s1 == NULL || s2 == NULL)
 	{
 		return (NULL);
 	}
@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		index++;
 	}
-	con_str = malloc(sizeof(char) * (i + 2));
+	con_str = malloc(sizeof(char) * (i));
 	if (con_str == NULL)
 	{
 		return (NULL);
