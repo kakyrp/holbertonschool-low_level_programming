@@ -5,11 +5,12 @@
 /**
  * print_list - function that prints all the elements of a list_t list.
  * @h: pointer to the head of linked lists.
- * return: number of elements in list_t.
+ * Return: number of elements in list_t.
 */
 size_t print_list(const list_t *h)
 {
 	unsigned int elements = 0;
+
 	while (h != NULL)
 	{
 		if (h->str != 0)
