@@ -16,7 +16,6 @@ int main(void)
 	digit = 1000;
 	printf("%lu, ", m);
 	printf("%lu, ", n);
-
 	for (cycl = 1; cycl <= 90; cycl++)
 	{
 		z = m + n;
@@ -46,6 +45,6 @@ int main(void)
 			printf(", ");
 		}
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
