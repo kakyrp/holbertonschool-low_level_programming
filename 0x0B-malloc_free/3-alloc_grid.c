@@ -3,11 +3,10 @@
 #include "holberton.h"
 
 /**
- * alloc_grid - function that concatenates two strings.
- * @s1: the first string to concatenate.
- * @s2: the second string to concatenate.
- * Return: the concatenated string is success
- * otherwise returns NULL.
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers.
+ * @width: colums
+ * @height: Rows.
+ * Return: Double pointer.
  */
 int **alloc_grid(int width, int height)
 {
