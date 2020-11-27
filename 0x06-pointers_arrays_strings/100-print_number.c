@@ -2,7 +2,7 @@
 
 /**
  * print_number - prints an integer
- * @n: The number to print.
+ * @n: The number to print
  * Return: On success 1. On error -1.
  */
 void print_number(int n)
