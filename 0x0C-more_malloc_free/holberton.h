@@ -8,6 +8,7 @@ void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
 char *memorySet(char *ptr, int x, unsigned int n);
+int *array_range(int min, int max);
 
 
 #endif
