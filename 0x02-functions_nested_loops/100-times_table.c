@@ -9,11 +9,11 @@ void print_times_table(int n)
 {
 	int i, j, nm;
 
-	if ( n < 0 || n > 15)
+	if (n < 0 || n > 15)
 	{
 		return;
 	}
-	else
+	else if
 	{
 		for (i = 0; i <= n; i++)
 		{
@@ -21,35 +21,22 @@ void print_times_table(int n)
 			{
 				nm = i * j;
 				if (nm < 10)
-				{
 					_putchar(nm + 48);
-				}
 				else if (nm < 100)
-				{
 					_putchar((nm / 10) + 48);
 					_putchar((nm % 10) + 48);
-				}
 				else
-				{
 					_putchar((nm / 100) + 48);
 					_putchar(((nm / 10) % 10) + 48);
 					_putchar((nm % 10) + 48);
-				}
-
 				if (j != n)
-				{
 					_putchar(44);
 					_putchar(32);
-				}
 				if ((i * (j + 1)) < 10 && (j != n))
-				{
 					_putchar(32);
 					_putchar(32);
-				}
 				else if ((i * (j + 1)) < 100 && (j != n))
-				{
 					_putchar(32);
-				}
 			}
 			_putchar(10);
 		}
