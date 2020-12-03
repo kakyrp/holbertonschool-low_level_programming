@@ -17,5 +17,6 @@ typedef struct dog
 #ifndef _FUNCTIONS_H
 #define _FUNCTIONS_H
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
 #endif
