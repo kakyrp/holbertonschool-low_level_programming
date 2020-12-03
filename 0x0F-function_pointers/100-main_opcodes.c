@@ -29,6 +29,6 @@ int main(int argc, char **argv)
 	{
 		printf("%02hhx ", mainadd[i]);
 	}
-	printf("%20hhx\n", mainadd[i]);
+	printf("%02hhx\n", mainadd[i]);
 	return (0);
 }
