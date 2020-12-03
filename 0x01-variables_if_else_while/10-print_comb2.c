@@ -10,22 +10,25 @@
  */
 int main(void)
 {
-int a = 0;
-int b = 0;
-for (a = 48; a <= 57; a++)
-{
-for (b = 48; b <= 57; b++)
-{
-putchar(a);
-putchar(b);
-if (a == 57 && b == 57)
-{
-break;
-}
-putchar(44);
-putchar(32);
-}
-}
-putchar(10);
-return (0);
+	int n = 48;
+	int m = 48;
+
+	while (n < 58)
+	{
+		while (m < 58)
+		{
+			putchar(n);
+			putchar(m);
+			if ((n != 57) || (m != 57))
+			{
+				putchar(44);
+				putchar(32);
+			}
+			m++;
+		}
+		m = 48;
+		n++;
+	}
+	putchar('\n');
+	return (0);
 }
