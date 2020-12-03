@@ -4,48 +4,37 @@
 */
 void times_table(void)
 {
-int factor1, factor2, result;
-for (factor1 = 0; factor1 < 10; factor1++)
-{
-for (factor2 = 0; factor2 < 10; factor2++)
-{
-if (factor2 == 0)
-{
-_putchar('0');
-_putchar(44);
+	int i, j, n;
+
+	for (i = 0; i <= 9; i++)
+	{
+		{
+			for (j = 0; j <= 9; j++)
+			{
+
+				n = i * j;
+				if (n > 9)
+				{
+					if (j != 0)
+					{
+						_putchar(44);
+						_putchar(32);
+					}
+					_putchar('0' + n / 10);
+					_putchar('0' + n % 10);
+				}
+				else
+				{
+					if (j != 0)
+					{
+						_putchar(44);
+						_putchar(32);
+						_putchar(32);
+					}
+					_putchar('0' + n);
+				}
+			}
+			_putchar('\n');
+		}
+	}
 }
-else
-{
-result = factor1 * factor2;
-if (factor2 == 9)
-{
-if (result > 9)
-{
-_putchar(32);
-_putchar(result / 10 + '0');
-_putchar(result % 10 + '0');
-_putchar(10);
-}
-else
-{
-_putchar(32);
-_putchar(32);
-_putchar(result + '0');
-_putchar(10);
-}
-}
-else
-{
-if (result > 9)
-{
-_putchar(32);
-_putchar(result / 10 + '0');
-_putchar(result % 10 + '0');
-_putchar(44);
-}
-else
-{
-_putchar(32); _putchar(32);
-_putchar(result + '0');
-_putchar(44);
-}}}}}}
